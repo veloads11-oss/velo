@@ -32,6 +32,12 @@
 
 ## Tools
 - `scripts/meta_client.py` — Meta Marketing API wrapper: list ad accounts/campaigns, pull insights (spend, CTR, cost/result, ROAS), pause/resume campaigns, update budgets.
-- `scripts/report.py --period <today|yesterday|last_7d|last_30d>` — CLI performance report. Run via Bash when Hussein asks for numbers, a check-in, or a status update.
+- `scripts/report.py --period <today|yesterday|last_7d|last_30d>` — CLI performance report.
 - Credentials live in `.env` (gitignored) — never print or commit the token.
-- If a Meta API call fails on network/proxy grounds, say so plainly rather than guessing at numbers.
+
+### Live data workflow
+This session's sandbox cannot reach the Meta API directly (network policy blocks it).
+Hussein runs `python scripts/report.py --period <x>` on his own machine and pastes the
+output here. Analyze whatever numbers he pastes — don't invent or guess figures if he
+hasn't provided them. If he asks for live numbers and hasn't pasted a report, ask him to
+run the script and paste the output, rather than assuming.
