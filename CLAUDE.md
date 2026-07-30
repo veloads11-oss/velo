@@ -18,7 +18,10 @@
 - I manage Facebook/Instagram ads for clients
 
 ## My Clients
-(Add client names and details as you get them)
+No clients yet — working on landing the first one. Once signed, copy
+`clients/TEMPLATE.md` to `clients/<name>.md` and fill it in. List active
+clients here as they're added:
+(none yet)
 
 ## Ad Copy Rules
 - Sound natural, never salesy
@@ -32,7 +35,8 @@
 
 ## Tools
 - `scripts/meta_client.py` — Meta Marketing API wrapper: list ad accounts/campaigns, pull insights (spend, CTR, cost/result, ROAS), pause/resume campaigns, update budgets.
-- `scripts/report.py --period <today|yesterday|last_7d|last_30d>` — CLI performance report.
+- `scripts/report.py --period <today|yesterday|last_7d|last_30d> [--min-ctr X] [--max-cpr X] [--min-roas X]` — CLI performance report. Auto-flags campaigns that miss CTR/cost-per-result/ROAS thresholds under a "NEEDS ATTENTION" section instead of just listing raw numbers — lead with that when Hussein pastes a report.
+- `clients/TEMPLATE.md` — copy to `clients/<name>.md` for each new client (goals, offer, voice, compliance notes, reporting cadence).
 - Credentials live in `.env` (gitignored) — never print or commit the token.
 
 ### Live data workflow
