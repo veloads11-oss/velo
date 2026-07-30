@@ -37,11 +37,13 @@ clients here as they're added:
 - `scripts/meta_client.py` — Meta Marketing API wrapper: list ad accounts/campaigns, pull insights (spend, CTR, cost/result, ROAS), pause/resume campaigns, update budgets.
 - `scripts/report.py --period <today|yesterday|last_7d|last_30d> [--min-ctr X] [--max-cpr X] [--min-roas X]` — CLI performance report. Auto-flags campaigns that miss CTR/cost-per-result/ROAS thresholds under a "NEEDS ATTENTION" section instead of just listing raw numbers — lead with that when Hussein pastes a report.
 - `clients/TEMPLATE.md` — copy to `clients/<name>.md` for each new client (goals, offer, voice, compliance notes, reporting cadence).
-- Credentials live in `.env` (gitignored) — never print or commit the token.
+- `crm/client.js` + `crm/list.js` — base44 CRM client (lead scraper/pipeline). `node crm/list.js <EntityName> [limit]` lists records. Entity names (Lead, Deal, etc.) are app-specific — check the base44 editor's Data tab if unsure.
+- Credentials live in `.env` (gitignored) — never print or commit tokens/keys.
 
 ### Live data workflow
-This session's sandbox cannot reach the Meta API directly (network policy blocks it).
-Hussein runs `python scripts/report.py --period <x>` on his own machine and pastes the
-output here. Analyze whatever numbers he pastes — don't invent or guess figures if he
-hasn't provided them. If he asks for live numbers and hasn't pasted a report, ask him to
-run the script and paste the output, rather than assuming.
+This session's sandbox cannot reach the Meta API or base44's API directly (network
+policy blocks both — confirmed via "host not permitted" errors). Hussein runs the
+scripts (`python scripts/report.py ...` or `node crm/list.js ...`) on his own machine
+and pastes the output here. Analyze whatever he pastes — don't invent or guess figures
+he hasn't provided. If he asks for live numbers and hasn't pasted output, ask him to
+run the relevant script, rather than assuming.

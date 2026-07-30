@@ -1,0 +1,11 @@
+{
+  "name": "velo-donna",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Donna's tooling for the base44 CRM integration",
+  "type": "module",
+  "dependencies": {
+    "@base44/sdk": "^0.8.41",
+    "dotenv": "^16.4.5"
+  }
+}
