@@ -37,7 +37,7 @@ clients here as they're added:
 - `scripts/meta_client.py` — Meta Marketing API wrapper: list ad accounts/campaigns, pull insights (spend, CTR, cost/result, ROAS), pause/resume campaigns, update budgets.
 - `scripts/report.py --period <today|yesterday|last_7d|last_30d> [--min-ctr X] [--max-cpr X] [--min-roas X]` — CLI performance report. Auto-flags campaigns that miss CTR/cost-per-result/ROAS thresholds under a "NEEDS ATTENTION" section instead of just listing raw numbers — lead with that when Hussein pastes a report.
 - `clients/TEMPLATE.md` — copy to `clients/<name>.md` for each new client (goals, offer, voice, compliance notes, reporting cadence).
-- `crm/client.js` + `crm/list.js` — base44 CRM client (lead scraper/pipeline). `node crm/list.js <EntityName> [limit]` lists records. Entity names (Lead, Deal, etc.) are app-specific — check the base44 editor's Data tab if unsure.
+- `crm/client.js` + `crm/list.js` — base44 client covering both the CRM (lead scraper/pipeline) and the website, as separate apps sharing one API key. `node crm/list.js <EntityName> [limit] [--app=crm|website]` lists records. Entity names (Lead, Deal, etc.) are app-specific — check the base44 editor's Data tab if unsure.
 - Credentials live in `.env` (gitignored) — never print or commit tokens/keys.
 
 ### Live data workflow

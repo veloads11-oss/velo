@@ -31,20 +31,21 @@ Periods: `today`, `yesterday`, `last_7d`, `last_30d` (any Meta `date_preset`).
   configurable performance-flagging thresholds.
 - `clients/TEMPLATE.md` — copy per new client (goals, offer, voice,
   compliance notes, reporting cadence).
-- `crm/client.js` — base44 SDK client, reads `BASE44_APP_ID` /
-  `BASE44_API_KEY` from `.env`.
+- `crm/client.js` — base44 SDK client. `getBase44Client("crm" | "website")`
+  picks which base44 app to connect to; both share `BASE44_API_KEY`.
 - `crm/list.js` — CLI to list records from any base44 entity (leads,
-  pipeline stages, etc.). Usage: `node crm/list.js <EntityName> [limit]`.
+  pipeline stages, site content, etc.).
 
 `.env` is gitignored — never commit real credentials.
 
-### CRM (base44) setup
+### Base44 (CRM + website) setup
 
 ```bash
 npm install
-node crm/list.js Lead 20   # replace "Lead" with your actual entity name
+node crm/list.js Lead 20                        # CRM app (default)
+node crm/list.js BlogPost 10 --app=website       # website app
 ```
 
-Entity names are specific to your base44 app's data model — check the
+Entity names are specific to each base44 app's data model — check the
 "Data" tab in the base44 editor for the exact names (e.g. `Lead`, `Deal`,
-`Contact`).
+`Contact` for the CRM).
