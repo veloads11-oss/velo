@@ -3,7 +3,7 @@
 Screen-share on business.facebook.com while recording. Aim for 2-3 minutes.
 
 ## Intro (10 sec)
-"Hey, quick walkthrough on giving [Agency Name] access to run your Facebook
+"Hey, quick walkthrough on giving Velo access to run your Facebook
 and Instagram ads. This doesn't give us your login or password — you're
 just adding us as a partner, and you can revoke it anytime."
 
@@ -16,7 +16,7 @@ Manager yet, [link/note on creating one]."
 partner access to your assets.'"
 
 ## Step 3 — Enter our Business Manager ID
-"Paste in this ID: **[YOUR AGENCY BUSINESS MANAGER ID]**. Click Next."
+"Paste in this ID: **1670265237374847**. Click Next."
 
 ## Step 4 — Assign assets
 "Now select what to share:
@@ -44,6 +44,10 @@ questions, just message me."
 
 ---
 
+A companion slide deck for this walkthrough is in `decks/client-onboarding/`
+(`velo-client-onboarding.pptx`) — screen-share it instead of the raw
+Business Settings page for a cleaner recording.
+
 **Before recording, fill in:**
-- [ ] Agency Business Manager ID
+- [x] Agency Business Manager ID — 1670265237374847
 - [ ] Link/note for clients without an existing Business Manager
