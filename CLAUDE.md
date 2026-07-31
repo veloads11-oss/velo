@@ -16,6 +16,7 @@
 - Name: Hussein
 - Agency: Velo
 - I manage Facebook/Instagram ads for clients
+- Velo's Meta Business Manager ID: 1670265237374847 (safe to hand out to clients — only lets them grant us Partner access, doesn't grant anything automatically)
 
 ## My Clients
 No clients yet — working on landing the first one. Once signed, copy
@@ -37,6 +38,7 @@ clients here as they're added:
 - `scripts/meta_client.py` — Meta Marketing API wrapper: list ad accounts/campaigns, pull insights (spend, CTR, cost/result, ROAS), pause/resume campaigns, update budgets.
 - `scripts/report.py --period <today|yesterday|last_7d|last_30d> [--min-ctr X] [--max-cpr X] [--min-roas X]` — CLI performance report. Auto-flags campaigns that miss CTR/cost-per-result/ROAS thresholds under a "NEEDS ATTENTION" section instead of just listing raw numbers — lead with that when Hussein pastes a report.
 - `clients/TEMPLATE.md` — copy to `clients/<name>.md` for each new client (goals, offer, voice, compliance notes, reporting cadence).
+- `clients/onboarding-loom-script.md` + `decks/client-onboarding/velo-client-onboarding.pdf` — client onboarding materials (Partner access + payment method walkthrough). Business Manager ID is already filled in. Hussein doesn't have PowerPoint — always hand him the `.pdf`, not the `.pptx`, if he asks for the deck again. Source/regen instructions in `decks/client-onboarding/README.md`.
 - `crm/client.js` + `crm/list.js` — base44 client covering both the CRM (lead scraper/pipeline) and the website, as separate apps sharing one API key. `node crm/list.js <EntityName> [limit] [--app=crm|website]` lists records. Entity names (Lead, Deal, etc.) are app-specific — check the base44 editor's Data tab if unsure.
 - Credentials live in `.env` (gitignored) — never print or commit tokens/keys.
 
