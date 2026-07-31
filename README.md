@@ -17,18 +17,21 @@ cp .env.example .env   # fill in META_ACCESS_TOKEN and META_AD_ACCOUNT_ID
 ## Usage
 
 ```bash
-python scripts/report.py --period last_7d
+python meta_ads.py --period last_7d
 ```
 
 Periods: `today`, `yesterday`, `last_7d`, `last_30d` (any Meta `date_preset`).
 
 ## Structure
 
+- `meta_ads.py` — root entry point; thin wrapper around `scripts/report.py`
+  so `python meta_ads.py` works right after `pip install -r requirements.txt`.
 - `scripts/meta_client.py` — thin wrapper around the Graph API: list ad
   accounts/campaigns, pull insights (spend, CTR, cost/result, ROAS),
   pause/resume campaigns, update budgets.
 - `scripts/report.py` — CLI report over campaign insights, with
-  configurable performance-flagging thresholds.
+  configurable performance-flagging thresholds. Can still be run directly
+  as `python scripts/report.py --period last_7d`.
 - `clients/TEMPLATE.md` — copy per new client (goals, offer, voice,
   compliance notes, reporting cadence).
 - `crm/client.js` — base44 SDK client. `getBase44Client("crm" | "website")`
