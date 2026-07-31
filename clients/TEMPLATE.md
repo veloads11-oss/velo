@@ -25,6 +25,13 @@
 - Words/claims to avoid:
 - Compliance notes (regulated industry, restricted content, etc.):
 
+## Creative / Content Sourcing
+- What assets did the client provide (photos, video, logo, brand guidelines):
+- Do they have existing organic content worth repurposing (IG/TikTok):
+- Do we need UGC creators for this account (Billo / JoinBrands / Insense, etc.):
+- Who's editing raw footage into ad-ready video:
+- Stock/AI fallback okay for this client, or does it need to look native:
+
 ## Reporting Cadence
 - How often does this client want updates:
 - Preferred format:
