@@ -54,6 +54,13 @@ figures elsewhere in these files (e.g. "$500 minimum spend for a kill
 decision") are unconverted heuristics from the source material — treat as
 directional, not precise CAD targets.
 
+`knowledge/` holds the full 517-chunk knowledge base backing the squad
+(translated from the original Portuguese source) — read `knowledge/README.md`
+before relying on it; quality and currency caveats are documented there.
+`.claude/skills/_resources/` has translated checklists (campaign launch,
+scaling readiness) and templates (campaign audit, creative brief, performance
+report) — not auto-loaded skills, just reference docs to pull from directly.
+
 ## Tools
 - `scripts/meta_client.py` — Meta Marketing API wrapper: list ad accounts/campaigns, pull insights (spend, CTR, cost/result, ROAS), pause/resume campaigns, update budgets.
 - `scripts/report.py --period <today|yesterday|last_7d|last_30d> [--min-ctr X] [--max-cpr X] [--min-roas X]` — CLI performance report. Auto-flags campaigns that miss CTR/cost-per-result/ROAS thresholds under a "NEEDS ATTENTION" section instead of just listing raw numbers — lead with that when Hussein pastes a report.

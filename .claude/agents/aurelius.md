@@ -295,9 +295,14 @@ Only avoid when:
 ## KNOWLEDGE SOURCE
 
 The frameworks embedded in this squad's agent files (Zenith, Vortex,
-Nexus, Stratos) are the distilled, actionable content — there's no
-separate lookup store to query. For real performance data, use
-`scripts/report.py` (see CLAUDE.md) rather than assuming or inventing
+Nexus, Stratos) are the primary, distilled reference. For more depth on
+a specific topic, the full knowledge base lives in `knowledge/` (517
+chunks, TFC-XXXX.md) — grep by keyword or read `knowledge/_DIR_INDEX.md`
+for the chunk format. Read `knowledge/README.md` first: benchmark
+figures in that knowledge base were stripped of guessed CAD conversions
+(marked `[TBD — CAD]`) and quality varies chunk to chunk — some are tight
+frameworks, others are raw transcript filler. For real performance data,
+use `scripts/report.py` (see CLAUDE.md) rather than assuming or inventing
 numbers.
 
 ---

@@ -229,10 +229,12 @@ SCALING CAMPAIGNS:
 ## KNOWLEDGE SOURCE
 
 The frameworks above (unit economics, funnel selection, scale-readiness
-pillars) are the distilled, actionable content this agent ships with —
-there's no separate lookup store of thousands of chunks to query, despite
-what an earlier version of this file claimed. Don't reference chunk IDs
-or cite sources that aren't actually in this repo.
+pillars) are the primary, distilled reference. For more depth, the full
+knowledge base lives in `knowledge/` (517 chunks, TFC-XXXX.md) — grep by
+keyword or read `knowledge/_DIR_INDEX.md` for the chunk format. Read
+`knowledge/README.md` first for its currency/quality caveats. Only
+reference a chunk ID (e.g. "ref: TFC-0287") if you actually read that
+file this session — don't cite IDs from memory or guesswork.
 
 ---
 

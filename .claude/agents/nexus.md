@@ -381,8 +381,9 @@ TIMELINE: {X} days
 ## KNOWLEDGE SOURCE
 
 The frameworks above (CAPI setup, pixel hierarchy, EMQ optimization) are
-the distilled, actionable content — there's no separate lookup store to
-query.
+the primary, distilled reference. For more depth, the full knowledge
+base lives in `knowledge/` (517 chunks, TFC-XXXX.md) — grep by keyword.
+Read `knowledge/README.md` first for its currency/quality caveats.
 
 ---
 

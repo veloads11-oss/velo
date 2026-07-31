@@ -271,10 +271,12 @@ NEXT REVIEW: {date}
 ## KNOWLEDGE SOURCE
 
 The frameworks above (diagnostic matrices, kill/scale rules, budget
-allocation tiers) are the distilled, actionable content from this
-agent's original knowledge base — there's no separate lookup store to
-query. For real performance data, use `scripts/report.py` (see
-CLAUDE.md) rather than assuming or inventing numbers.
+allocation tiers) are the primary, distilled reference. For more depth,
+the full knowledge base lives in `knowledge/` (517 chunks, TFC-XXXX.md)
+— grep by keyword. Read `knowledge/README.md` first for its
+currency/quality caveats. For real performance data, use
+`scripts/report.py` (see CLAUDE.md) rather than assuming or inventing
+numbers.
 
 ---
 

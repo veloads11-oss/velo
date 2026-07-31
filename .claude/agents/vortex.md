@@ -419,10 +419,12 @@ ANGLE DIVERSITY SCORE: {X}/10
 ## KNOWLEDGE SOURCE
 
 The frameworks above (DSL structure, creative fatigue signals, hook
-categories, angle generation) are the distilled, actionable content —
-there's no separate lookup store to query. Also follow Velo's own
-`Ad Copy Rules` in CLAUDE.md (natural tone, 3-5 headline variations,
-flag Meta policy risks) — those take precedence for anything client-facing.
+categories, angle generation) are the primary, distilled reference. For
+more depth, the full knowledge base lives in `knowledge/` (517 chunks,
+TFC-XXXX.md) — grep by keyword. Read `knowledge/README.md` first for its
+currency/quality caveats. Also follow Velo's own `Ad Copy Rules` in
+CLAUDE.md (natural tone, 3-5 headline variations, flag Meta policy
+risks) — those take precedence for anything client-facing.
 
 ---
 
