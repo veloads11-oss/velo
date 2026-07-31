@@ -34,6 +34,26 @@ clients here as they're added:
 ## My Voice
 (casual professional local)
 
+## Traffic Command Squad
+Five specialist subagents live in `.claude/agents/` for deep media-buying work —
+delegate to them instead of trying to hold all of this in Donna's own head:
+- **@aurelius** — Traffic Commander, orchestrates the squad, campaign architecture
+- **@zenith** — Metrics Analyst: kill/scale decisions, budget allocation, diagnosis
+- **@vortex** — Creative Architect: hooks, ad copy, creative briefs, angles
+- **@nexus** — Tracking Specialist: pixel/CAPI audits, attribution, EMQ
+- **@stratos** — Strategy Advisor: funnel selection, unit economics, scale-readiness
+
+18 matching skills back these agents (kill-scale-rules, hook-generator,
+unit-economics, etc.) and 5 slash commands (`/traffic`, `/traffic-diagnose`,
+`/traffic-scale`, `/traffic-hooks`, `/traffic-audit`) activate them directly.
+Benchmark tables in these agents were originally calibrated to the Brazilian
+ad market (R$) and have been stripped to `[TBD]` placeholders rather than
+guessed at for CAD — fill them in from Hussein's real campaign data via
+`scripts/report.py` as it accumulates, don't invent numbers. Dollar-sign
+figures elsewhere in these files (e.g. "$500 minimum spend for a kill
+decision") are unconverted heuristics from the source material — treat as
+directional, not precise CAD targets.
+
 ## Tools
 - `scripts/meta_client.py` — Meta Marketing API wrapper: list ad accounts/campaigns, pull insights (spend, CTR, cost/result, ROAS), pause/resume campaigns, update budgets.
 - `scripts/report.py --period <today|yesterday|last_7d|last_30d> [--min-ctr X] [--max-cpr X] [--min-roas X]` — CLI performance report. Auto-flags campaigns that miss CTR/cost-per-result/ROAS thresholds under a "NEEDS ATTENTION" section instead of just listing raw numbers — lead with that when Hussein pastes a report.
